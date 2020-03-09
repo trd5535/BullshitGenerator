@@ -5,12 +5,12 @@ import os, re
 import random,readJSON
 
 data = readJSON.读JSON文件("data.json")
-名人名言 = data["famous"] # a 代表前面垫话，b代表后面垫话
-前面垫话 = data["before"] # 在名人名言前面弄点废话
-后面垫话 = data['after']  # 在名人名言后面弄点废话
+名人名言 = data["良禽择木而栖，野鸡谁都能骑"] # a 代表前面垫话，b代表后面垫话
+前面垫话 = data["我今天吃了火锅"] # 在名人名言前面弄点废话
+后面垫话 = data['背着好姐妹偷情好刺激']  # 在名人名言后面弄点废话
 废话 = data['bosh'] # 代表文章主要废话来源
 
-xx = "学生会退会"
+xx = "被路边老大爷抓走"
 
 重复度 = 2
 
@@ -39,7 +39,7 @@ def 另起一段():
     return xx
 
 if __name__ == "__main__":
-    xx = input("请输入文章主题:")
+    xx = input("超仔健身:")
     for x in xx:
         tmp = str()
         while ( len(tmp) < 6000 ) :
